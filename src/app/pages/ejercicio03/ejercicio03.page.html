@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ejercicio03</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 3</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <ion-button (click)="subtract()" size="large">-</ion-button>
+  <ion-button (click)="addUp()" size="large">+</ion-button>
+  <p id="counter">{{ counter }}</p>
+  <ion-button (click)="reset()" size="large" expand="full">Reset</ion-button>
 </ion-content>

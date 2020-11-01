@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio01Page implements OnInit {
 
+  name: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showName() {
+    this.name = "Ismael Pacheco Torrecilla";
+  }
+
+  clearName() {
+    this.name = "";
   }
 
 }

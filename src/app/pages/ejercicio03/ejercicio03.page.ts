@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio03Page implements OnInit {
 
+  counter: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.counter = 0;
+  }
+
+  addUp() {
+    this.counter++;
+  }
+
+  subtract() {
+    this.counter--;
+  }
+
+  reset() {
+    this.counter = 0;
   }
 
 }
