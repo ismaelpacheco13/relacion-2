@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ejercicio07Page implements OnInit {
 
+  eur = 0;
+  pts = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  updateEuros() {
+    this.eur = this.pts / 166.386;
+  }
+
+  updatePesetas() {
+    this.pts = this.eur * 166.386;
   }
 
 }
